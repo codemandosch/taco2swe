@@ -62,6 +62,9 @@ Viktiga parametrar i filen "Tacotron-2/hparams.py":
 
 Övriga kommandon:
 
+För att läsa loggar/se träningsgrafer i tensorboard:
+	tensorboard --logdir="."
+
 Write command in terminal before training to decide which GPU that should be used.
 
 	export CUDA_VISIBLE_DEVICES=1
