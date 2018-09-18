@@ -1,6 +1,6 @@
 Detta är en version av repot https://github.com/Rayhane-mamah/Tacotron-2 som är modifierad för att köras med svensk data. Den innehåller även vissa andra tillägg och modifikationer i parametrar.
 
-1. Installera CUDA (helst 9.0), cudnn (helst 7.0.5) och Tensorflow (helst 1.10). Kör kommandot 
+1. Installera CUDA (helst 9.0), cudnn (helst 7.0.5) och Tensorflow (helst 1.10). Kör kommandot:
 
 	```pip3 install -r requirements.txt```
 
@@ -14,11 +14,11 @@ i mappen "Tacotron-2. Här finns bra instruktioner för att installera Cuda+cudn
 
 5. Koden innehåller en funktion som trimmar bort tystnad. Hur känslig den parametern är kan man justera med parametern "trim_top_db". Lägre värde innebär mer aggressiv trimmning.
 
-6. Förbered träningssettet genom att köra kommandot 
+6. Förbered träningssettet genom att köra kommandot:
 
 	```python3 preprocess.py```
 
-7. Träna modellen genom att köra 
+7. Träna modellen genom att köra:
 
 	```python3 train.py --model="Tacotron"```
 
@@ -74,9 +74,5 @@ run this command in the Tacotron-2 folder to be able to use griffin_lim_synthesi
 Synthesize command
 
 	python3 synthesize.py --model='Tacotron' --checkpoint='pretrained' --name='Tacotron-2' --text_list=''
-
-normalization command
-
-	ffmpeg-normalize *.wav --dual-mono -ext "wav" -f -nt rms -t -19
 
 
