@@ -49,16 +49,20 @@ Viktiga parametrar i filen "Tacotron-2/hparams.py":
 Övriga kommandon:
 
 Write command in terminal before training to decide which GPU that should be used.
+
 	export CUDA_VISIBLE_DEVICES=1
 	export CUDA_VISIBLE_DEVICES=0
 
 run this command in the Tacotron-2 folder to be able to use griffin_lim_synthesis_tool.ipynb
+
 	jupyter notebook --ip=127.0.0.1 --port=31337
 
 Synthesize command
+
 	python3 synthesize.py --model='Tacotron' --checkpoint='pretrained' --name='Tacotron-2' --text_list=''
 
 normalization command
+
 	ffmpeg-normalize *.wav --dual-mono -ext "wav" -f -nt rms -t -19
 
 
