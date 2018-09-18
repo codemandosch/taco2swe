@@ -2,7 +2,7 @@ Detta är en version av repot https://github.com/Rayhane-mamah/Tacotron-2 som ä
 
 1. Installera CUDA (helst 9.0), cudnn (helst 7.0.5) och Tensorflow (helst 1.10). Kör kommandot 
 
-	pip3 install -r requirements.txt
+	```pip3 install -r requirements.txt```
 
 i mappen "Tacotron-2. Här finns bra instruktioner för att installera Cuda+cudnn: https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8
 
@@ -16,17 +16,17 @@ i mappen "Tacotron-2. Här finns bra instruktioner för att installera Cuda+cudn
 
 6. Förbered träningssettet genom att köra kommandot 
 
-	python3 preprocess.py
+	```python3 preprocess.py```
 
 7. Träna modellen genom att köra 
 
-	python3 train.py --model="Tacotron" 
+	```python3 train.py --model="Tacotron"```
 
 (vill du försöka träna wavenet också så justera hur länge du vill träna varje modell i train.py och kör sen "python3 train.py")
 
 8. Syntetisera meningarna i "Tacotron-2/meningar.txt" genom att köra 
 
-	python3 syntetiserameningar.py
+	```python3 syntetiserameningar.py```
 
 De syntetiserade meningarna och tillhörande plots kommer att hamna i "Tacotron-2/tacotron_output/logs-eval". Vill du syntetisera från en annan tidpunkt i träningshistorien så ändra översta raden i filen "Tacotron-2/logs-Tacotron/taco-pretrained/checkpoint till en checkpoint som finns sparad i samma mapp.
 
