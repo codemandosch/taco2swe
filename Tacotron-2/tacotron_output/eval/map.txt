@@ -1,0 +1,2 @@
+vad roligt att du vill testa den här|tacotron_output/eval/mel-1.npy|<no_g>
+Här kan du skriva dina meningar|tacotron_output/eval/mel-2.npy|<no_g>
